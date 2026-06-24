@@ -1,0 +1,19 @@
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pytest
+  - pydantic>=2
+  - pyyaml
+  - pandas
+  - numpy
+  - tqdm
+  - pip:
+      - datasets
+      - python-dotenv
+      - accelerate
+      - bitsandbytes
+      - qwen-vl-utils
+      - torch
+      - transformers>=4.51.0

@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aria-research"
+version = "0.1.0"
+description = "Structured probing framework for scientific reasoning traces."
+requires-python = ">=3.11"
+dependencies = [
+  "datasets",
+  "numpy",
+  "pandas",
+  "pydantic>=2",
+  "python-dotenv",
+  "pyyaml",
+  "tqdm",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+local-models = [
+  "accelerate",
+  "bitsandbytes",
+  "qwen-vl-utils",
+  "torch",
+  "transformers>=4.51.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["aria*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
