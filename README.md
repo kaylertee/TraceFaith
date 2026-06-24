@@ -1,6 +1,6 @@
 # TraceFaith: Faithfulness Evaluation through Interventions for Cross-Modal Scientific Reasoning Traces
 
-Research code for TraceFaith, a cross-modal faithfulness-evaluation project for multimodal scientific question answering.
+Research code for TraceFaith, a cross-modal faithfulness-evaluation framework and algorithm for multimodal scientific question answering.
 
 ## Project Aim
 
